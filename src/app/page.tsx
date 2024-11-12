@@ -25,9 +25,7 @@ import {
 } from '@iconscout/react-unicons';
 import Link from 'next/link';
 import "./styles.css"
-import ChatBubble from "./components/chatbot";
 import HomeSection from "./home";
-
 
 // Interface definitions
 interface ServiceItem {
@@ -304,7 +302,7 @@ function App() {
 
   return (<>
     <NextUIProvider>
-      <ChatBubble/>
+      
        <Navbar id="nav" expand="lg" className={`${styles.navbar} ${navExpanded ? styles.navExpanded : ''}`} fixed="top">
   <Container className="p-0">
     <Navbar.Brand href="#home" className={styles.logoContainer}>
