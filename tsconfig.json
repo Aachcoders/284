@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",  // Use ESNext for the latest JavaScript features
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",  // Use "node" for module resolution
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",  // Next.js uses "preserve" for JSX transformation
+    "incremental": true,
+    
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]  // This allows importing with "@/path/to/file"
+    }
+  },
+  "include": [
+    "next-env.d.ts",  // Include Next.js environment typings
+    "**/*.ts",        // Include all TypeScript files
+    "**/*.tsx",       // Include all TypeScript JSX files
+    ".next/types/**/*.ts"  // Include types in .next
+  ],
+  "exclude": [
+    "node_modules"  // Exclude node_modules from TypeScript processing
+  ]
+}
